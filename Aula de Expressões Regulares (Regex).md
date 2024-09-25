@@ -105,7 +105,7 @@ Os quantificadores especificam quantas vezes um caractere ou grupo de caracteres
 
 \- No Python, a biblioteca \`re\` é usada para trabalhar com expressões regulares. Exemplo:
 
-![Código 1](/Users/jusbrasil/Workspace/rr/101-regex/src/files/img/carbon.png)
+![Código 1](src/files/img/carbon.png)
 
 7) ## Exemplos Práticos
 
