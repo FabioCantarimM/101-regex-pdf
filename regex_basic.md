@@ -6,8 +6,6 @@ Expressões regulares, ou regex (regular expressions), são padrões usados para
 
    1) ### Letras e Números  
 
-      
-
    Uma expressão regular pode consistir de caracteres literais como letras (\`a\`, \`b\`, \`c\`) ou números (\`0\`, \`1\`, \`2\`).  
    \- Exemplo: \`abc\` corresponde exatamente à string \`"abc"\`.
 
@@ -28,7 +26,6 @@ Os quantificadores especificam quantas vezes um caractere ou grupo de caracteres
 1) ### \`\*\` — Zero ou mais vezes.
 
   		 \- Exemplo: \`a\*\` corresponde a \`""\`, \`"a"\`, \`"aa"\`, \`"aaa"\`.  
-   
 
 ### 
 
@@ -94,12 +91,6 @@ Os quantificadores especificam quantas vezes um caractere ou grupo de caracteres
    5) ### \`\\s\` — Corresponde a qualquer espaço em branco (inclui espaços, tabulações, novas linhas).
 
    6) ### \`\\S\` — Corresponde a qualquer caractere que não seja um espaço em branco.
-
-   
-
-   
-
-   
 
 6) ##  Ferramentas e Bibliotecas
 

@@ -17,11 +17,11 @@ tables = camelot.read_pdf(path,
                           pages="1-end",
                           password="161"
                           )
-print(tables[0].parsing_report)
+# print(tables[0].parsing_report)
 
-# camelot.plot(tables[0], kind="contour")
+camelot.plot(tables[0], kind="contour")
 
-# plt.show()
+plt.show()
 
 print(tables[0].df)
 print("Waiting for work")
