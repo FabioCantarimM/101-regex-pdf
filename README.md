@@ -55,7 +55,7 @@ Este projeto processa arquivos PDF carregados no Amazon S3, extrai informações
 
 ##Execução
 A aplicação pode ser executada manualmente para verificar novas mensagens no SQS e processar os arquivos:
-```bash
+    ```bash
     python3 __init__.py
 
 ##Conteúdo Adicional
