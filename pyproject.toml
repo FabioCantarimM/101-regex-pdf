@@ -16,6 +16,11 @@ psycopg2-binary = "^2.9.9"
 sqlalchemy = "^2.0.32"
 unidecode = "^1.3.8"
 pypdf2 = "^3.0.1"
+black = "^24.8.0"
+isort = "^5.13.2"
+schedule = "^1.2.2"
+pytz = "^2024.2"
+boto3 = "^1.35.29"
 
 
 [build-system]
