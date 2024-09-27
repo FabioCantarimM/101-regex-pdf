@@ -3,10 +3,11 @@ import os
 import re
 import urllib.parse
 
-from configs.tools.aws.sqs import AWSSQSManager
-from text_pdf_extractor import PDFTextExtractor
-from table_pdf_extractor import PDFTableExtractor
 from configs.rules.notas import rules_dict
+from configs.tools.aws.sqs import AWSSQSManager
+from table_pdf_extractor import PDFTableExtractor
+from text_pdf_extractor import PDFTextExtractor
+
 
 class HTMLSQSListener:
     def __init__(self):
@@ -28,7 +29,9 @@ class HTMLSQSListener:
                 try:
                     print("oi")
                     resultTxt = PDFTextExtractor(object_key_final).start()
-                    resultImg = PDFTableExtractor(object_key_final,configs=rules_dict["jornada"]).start()
+                    resultImg = PDFTableExtractor(
+                        object_key_final, configs=rules_dict["jornada"]
+                    ).start()
                 except Exception as e:
                     self.sqs.delete_message_from_queue(self.queue, receipt_handle)
                     raise (e)

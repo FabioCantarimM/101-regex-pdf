@@ -6,8 +6,8 @@ import pandas as pd
 from unidecode import unidecode
 
 from configs.rules.notas import rules_dict
-from configs.tools.postgre import RDSPostgreSQLManager
 from configs.tools.aws.s3 import AWSS3
+from configs.tools.postgre import RDSPostgreSQLManager
 
 logging.basicConfig(level=logging.INFO)
 
@@ -28,7 +28,9 @@ class PDFTableExtractor:
                 self.configs["header_fix"],
             )
             main = self.get_table_data(
-                self.configs["table_areas"], self.configs["columns"], self.configs["fix"]
+                self.configs["table_areas"],
+                self.configs["columns"],
+                self.configs["fix"],
             )
             small = self.get_table_data(
                 self.configs["small_table_areas"],

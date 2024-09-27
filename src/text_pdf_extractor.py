@@ -5,8 +5,8 @@ import re
 import pandas as pd
 import PyPDF2
 
-from configs.tools.postgre import RDSPostgreSQLManager
 from configs.tools.aws.s3 import AWSS3
+from configs.tools.postgre import RDSPostgreSQLManager
 
 logging.basicConfig(level=logging.INFO)
 
@@ -87,7 +87,7 @@ class PDFTextExtractor:
     def get_df(self):
         df = self.get_text()
         return self.text_to_dataframe(df)
-    
+
     def download_file(self):
         bucket = os.getenv("AWS_BUCKET")
         if not os.path.exists("download"):
